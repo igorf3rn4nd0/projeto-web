@@ -1,0 +1,46 @@
+.Login-card {
+  padding-top: 10vh;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 15px;
+  height: 60vh;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  -webkit-box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+  box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+}
+
+.Title {
+  font-size: 14pt;
+  color: #282c34;
+  margin-bottom: 20px;
+}
+
+.Botao-entrar {
+  min-width: 250px;
+  min-height: 30px;
+  margin-top: 30px;
+}
+
+.Cadastrar-area {
+  padding-top: 30%;
+}
+
+.Cadastrar-pergunta {
+  color: black;
+  font-size: 10pt;
+  margin-right: 10px;
+}
+
+.Cadastrar-se {
+  cursor: pointer;
+  color: dodgerblue;
+  font-size: 10pt;
+}

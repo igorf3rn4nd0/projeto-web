@@ -1,11 +1,11 @@
-.Login-card {
-  padding-top: 10vh;
-  margin-top: 20vh;
+.Cadastro-card {
+  padding-top: 5vh;
+  margin-top: 15vh;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
   border-radius: 15px;
-  height: 60vh;
+  height: 70vh;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -23,8 +23,18 @@
   margin-bottom: 20px;
 }
 
-.Botao-entrar {
+.Botao-cadastrar {
   min-width: 250px;
   min-height: 30px;
   margin-top: 30px;
+}
+
+.Voltar-area {
+  padding-top: 10%;
+}
+
+.Voltar {
+  cursor: pointer;
+  color: dodgerblue;
+  font-size: 10pt;
 }
