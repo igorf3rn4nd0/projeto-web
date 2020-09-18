@@ -7,15 +7,20 @@ class MyInput extends Component {
 
         this.state = {
             label: '',
-            value: ''
+            value: '',
+            placeholder: ''
         };
+    }
+
+    validate () {
+        console.log('validate')
     }
 
     render () {
         return (
             <div className="Div-my-input">
                 <span className="Label">{this.props.label}</span>
-                <input onChange={this.props.onChange} className="My-input" value={this.props.value}/>
+                <input onKeyDown={this.props.onKeyDown} onChange={this.props.onChange} className="My-input" value={this.props.value} placeholder={this.props.placeholder}/>
             </div>
         )
     }

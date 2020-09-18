@@ -6,6 +6,7 @@ import axios from 'axios';
 class Cadastro extends Component {
     constructor(props) {
         super(props);
+        this.nome = React.createRef();
 
         this.state = {
             nome: '',
@@ -17,8 +18,13 @@ class Cadastro extends Component {
     }
 
     cadastrar () {
-        // todo validar senhas iguais e lenght >3
-        if (this.state.email && this.state.senha && this.state.nome && this.state.confirmacaoSenha) {
+        let erros = []
+        Object.entries(this.state).forEach((obj) => {
+            if ((!obj.value) || obj.value.length < 3) {
+                erros.push(obj.key)
+            }
+        })
+        if (erros.length === 0) {
             axios.post('https://reqres.in/api/register', { email: this.state.email, password: this.state.senha })
                 .then((response) => {
                     this.props.onCadastrar(response.data);
@@ -26,7 +32,7 @@ class Cadastro extends Component {
                 alert('Usuário ou senha incorretos!')
             })
         } else {
-            alert('Por favor preencha todas as informações!')
+            alert('Por favor preencha todas as informações! Cada campo deve contar 3 ou mais caracteres')
         }
         /*
         {

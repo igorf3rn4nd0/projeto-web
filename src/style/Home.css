@@ -1,58 +1,165 @@
-@font-face {
-  font-weight: 400;
-  font-style:  normal;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-weight: 400;
-  font-style:  italic;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
+html, body {
+  height: 100%;
 }
 
-@font-face {
-  font-weight: 500;
-  font-style:  normal;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
-}
-@font-face {
-  font-weight: 500;
-  font-style:  italic;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
+.Div-maior {
+  background: red;
 }
 
-@font-face {
-  font-weight: 700;
-  font-style:  normal;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
+.Text {
+  color: white;
+  font-size: 30pt;
+  font-weight: bold;
+  line-height: 60px;
 }
-@font-face {
-  font-weight: 700;
-  font-style:  italic;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
+.Button {
+  background: white;
+  font-size: 15pt;
+  font-weight: bold;
+  padding: 10px 30px 10px 30px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: #3D9CED;
+  text-decoration:none;
+  cursor: pointer;
 }
 
-@font-face {
-  font-weight: 900;
-  font-style:  normal;
-  font-family: 'Inter-Loom';
-
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
+.Button:hover {
+  color: grey;
 }
-@font-face {
-  font-weight: 900;
-  font-style: italic;
-  font-family: 'Inter-Loom';
-  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
+
+.Mid-container {
+  padding-top: 16%;
+  padding-left: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 40%;
+}
+
+.Mid-pesquisa {
+  position: absolute;
+  z-index: 300;
+  top: 15%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Filme {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  background: white;
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+  box-shadow: -6px 4px 24px -12px rgba(0,0,0,0.75);
+}
+
+.Poster {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.Nenhum-filme {
+  color: white;
+  font-size: 14pt;
+  margin-top: 50px;
+}
+
+.Menu {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: table-row;
+  width: 100%;
+  color: white;
+}
+
+.Logo-maior {
+  top: 25%;
+  left: 25%;
+  z-index: 400;
+  position: absolute;
+  height: 40%;
+}
+
+.Fundo-logo {
+  border-radius: 50px;
+  top: 30%;
+  left: 27%;
+  z-index: 200;
+  background: white;
+  position: absolute;
+  height: 30%;
+  width: 15%;
+}
+
+#Nota {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 30px;
+  background: red;
+  color: white;
+  font-size: 9pt;
+}
+
+#Info-filme {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #626262;
+  font-size: 12pt;
+}
+
+#Ul {
+  width: 90%;
+  list-style: none;
+}
+
+#Li {
+  display: inline;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#Li:hover {
+  color: #A0BCE0;
+}
+
+#Busca {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+#TxtBusca {
+  height: 30px;
+  max-width: 80%;
+  font-size: 12pt;
+  padding-left: 15px;
+  border-radius: 20px;
+  outline: none;
+  border: hidden;
+}
+
+.Pesquisa-principal {
+  height: 40px;
+  width: 30vw;
+  font-size: 12pt;
+  padding-left: 15px;
+  border-radius: 20px;
+  outline: none;
+  border: hidden;
+}
+
+.Wrapper {
+  height: 80vh;
+  width: 100%;
+  background: rgb(14,72,162);
+  background: linear-gradient(198deg, rgba(14,72,162,1) 0%, rgba(65,163,244,1) 100%);
+  clip-path: polygon(0 0%, 100% 0,100% 100%,0 70%);
 }

@@ -8,22 +8,40 @@ class App extends Component{
         super(props);
 
         this.state = {
-            rota: 'TelaInicial'
+            rota: 'TelaInicial',
+            token: ''
         }
+        this.entrou = this.entrou.bind(this)
+        this.saiu = this.saiu.bind(this)
+        this.state.token = localStorage.getItem('token')
     }
 
     changeRota (val) {
         this.setState({rota:val})
     }
 
+    entrou (val) {
+        console.log('val: ', val)
+        localStorage.setItem('token', val.token)
+        this.setState({usuario:val})
+        this.changeRota('Home')
+    }
+
+    saiu (val) {
+        this.setState({token:''})
+        localStorage.setItem('token', '')
+        this.changeRota('TelaInicial')
+    }
+
     render() {
-        if (this.state.rota === 'TelaInicial') {
+        console.log('token: ', this.state.token)
+        if (this.state.rota === 'Home' || this.state.token) {
             return (
-                <TelaInicial onEntrou={(event) => this.changeRota('Home')}/>
+                <Home onSair={(event) => this.saiu()}/>
             );
-        } else if (this.state.rota === 'Home') {
+        } else if (this.state.rota === 'TelaInicial') {
             return (
-                <Home/>
+                <TelaInicial onEntrou={(event) => this.entrou(event)}/>
             );
         }
     }

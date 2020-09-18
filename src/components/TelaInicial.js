@@ -17,9 +17,7 @@ class TelaInicial extends Component {
     }
 
     onEntrar (val) {
-        // todo api
-        console.log('usuario: ', val)
-        this.props.onEntrou()
+        this.props.onEntrou(val)
     }
 
     onCadastrar (val) {
