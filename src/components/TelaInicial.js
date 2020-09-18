@@ -21,7 +21,6 @@ class TelaInicial extends Component {
     }
 
     onCadastrar (val) {
-        console.log('teste: ', val)
         this.props.onEntrou()
     }
 

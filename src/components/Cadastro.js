@@ -19,18 +19,23 @@ class Cadastro extends Component {
 
     cadastrar () {
         let erros = []
-        Object.entries(this.state).forEach((obj) => {
-            if ((!obj.value) || obj.value.length < 3) {
-                erros.push(obj.key)
+        let campos = ['nome', 'email', 'senha', 'confirmacaoSenha']
+        campos.forEach((campo) => {
+            if ((!this.state[campo]) || this.state[campo].length < 3) {
+                erros.push(campo)
             }
         })
         if (erros.length === 0) {
-            axios.post('https://reqres.in/api/register', { email: this.state.email, password: this.state.senha })
-                .then((response) => {
-                    this.props.onCadastrar(response.data);
-                }).catch(() => {
-                alert('Usuário ou senha incorretos!')
-            })
+            if (this.state.senha === this.state.confirmacaoSenha) {
+                axios.post('https://reqres.in/api/register', { email: this.state.email, password: this.state.senha })
+                    .then((response) => {
+                        this.props.onCadastrar(response.data);
+                    }).catch(() => {
+                    alert('Usuário ou senha incorretos!')
+                })
+            } else {
+                alert('As senhas informadas não batem!')
+            }
         } else {
             alert('Por favor preencha todas as informações! Cada campo deve contar 3 ou mais caracteres')
         }

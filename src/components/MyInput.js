@@ -12,10 +12,6 @@ class MyInput extends Component {
         };
     }
 
-    validate () {
-        console.log('validate')
-    }
-
     render () {
         return (
             <div className="Div-my-input">

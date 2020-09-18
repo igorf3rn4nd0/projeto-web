@@ -21,7 +21,6 @@ class App extends Component{
     }
 
     entrou (val) {
-        console.log('val: ', val)
         localStorage.setItem('token', val.token)
         this.setState({usuario:val})
         this.changeRota('Home')
@@ -34,7 +33,6 @@ class App extends Component{
     }
 
     render() {
-        console.log('token: ', this.state.token)
         if (this.state.rota === 'Home' || this.state.token) {
             return (
                 <Home onSair={(event) => this.saiu()}/>

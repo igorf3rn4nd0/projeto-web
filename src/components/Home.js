@@ -34,7 +34,6 @@ class Home extends Component {
             axios.post('http://www.omdbapi.com/?t=' + campoPesquisa + '&apikey=efbb6c79')
                 .then((response) => {
                     this.setState({filme:response.data})
-                    console.log('filme: ', this.state.filme)
                 }).catch((error) => {
                 alert(error.message)
             }).finally(() => {
@@ -75,14 +74,14 @@ class Home extends Component {
                     <div className="Wrapper">
                     </div>
                     <div className="Mid-pesquisa">
-                        <input onChange={event => { this.pesquisar(event.target.value) }} className="Pesquisa-principal" placeholder={'Pesquisar'}/>
+                        <input autoFocus onBlur={event => this.setState({pesquisar:false})} onChange={event => { this.pesquisar(event.target.value) }} className="Pesquisa-principal" placeholder={'Pesquisar'}/>
                         {cardFilme}
                     </div>
                 </div>
         } else {
             pesquisaSuperior = <li id="Busca">
                 <div className="divBusca">
-                    <input type="text" id="TxtBusca" placeholder="Pesquisar" />
+                    <input onClick={event => this.setState({pesquisar:true})} type="text" id="TxtBusca" placeholder="Pesquisar" />
                 </div>
             </li>
             elementoCentral = <div>
