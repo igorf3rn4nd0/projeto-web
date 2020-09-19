@@ -19,7 +19,7 @@ class Login extends Component {
             if (this.state.email.length >= 3 && this.state.senha.length >= 3) {
                 // 'eve.holt@reqres.in'
                 // 'cityslicka'
-                axios.post('//reqres.in/api/login', { email: this.state.email, password: this.state.senha })
+                axios.post('https://reqres.in/api/login', { email: this.state.email, password: this.state.senha })
                     .then((response) => {
                         this.props.onEntrar(response.data);
                     }).catch(() => {
