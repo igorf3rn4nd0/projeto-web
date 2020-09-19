@@ -23,7 +23,7 @@ html, body {
 }
 
 .Mid-container {
-  padding-top: 10%;
+  margin-top: 10%;
   width: 100%;
   position: absolute;
   z-index: 400;

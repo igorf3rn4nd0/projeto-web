@@ -32,7 +32,7 @@ class Home extends Component {
         if (val && val.length > 3) {
             this.setState({loading:true})
             const campoPesquisa = val.replace(' ', '+')
-            axios.post('//www.omdbapi.com/?t=' + campoPesquisa + '&apikey=efbb6c79')
+            axios.post('https://www.omdbapi.com/?t=' + campoPesquisa + '&apikey=efbb6c79')
                 .then((response) => {
                     this.setState({filme:response.data})
                 }).catch((error) => {
