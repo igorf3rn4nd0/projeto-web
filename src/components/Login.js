@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MyInput from './MyInput'
 import axios from 'axios'
 import '../style/Login.css'
+import { isMobile } from 'react-device-detect'
 
 class Login extends Component {
     constructor(props) {
@@ -18,7 +19,7 @@ class Login extends Component {
             if (this.state.email.length >= 3 && this.state.senha.length >= 3) {
                 // 'eve.holt@reqres.in'
                 // 'cityslicka'
-                axios.post('https://reqres.in/api/login', { email: this.state.email, password: this.state.senha })
+                axios.post('//reqres.in/api/login', { email: this.state.email, password: this.state.senha })
                     .then((response) => {
                         this.props.onEntrar(response.data);
                     }).catch(() => {
@@ -39,8 +40,14 @@ class Login extends Component {
     }
 
     render () {
+        let classNameCardLogin
+        if (isMobile) {
+            classNameCardLogin = 'Login-card-mobile'
+        } else {
+            classNameCardLogin = 'Login-card'
+        }
         return (
-            <div className="Login-card">
+            <div className={classNameCardLogin}>
                 <span className="Title">Entrar</span>
                 <MyInput onChange={(event) => { this.setState({email:event.target.value}) }} label={'E-mail'} value={this.state.email}/>
                 <MyInput onKeyDown={(event) => this.keyPress(event)} onChange={(event) => { this.setState({senha:event.target.value}) }} label={'Senha'} value={this.state.senha}/>

@@ -6,12 +6,6 @@ html, body {
   background: red;
 }
 
-.Text {
-  color: white;
-  font-size: 30pt;
-  font-weight: bold;
-  line-height: 60px;
-}
 .Button {
   background: white;
   font-size: 15pt;
@@ -29,12 +23,40 @@ html, body {
 }
 
 .Mid-container {
-  padding-top: 16%;
-  padding-left: 48%;
+  padding-top: 10%;
+  width: 100%;
+  position: absolute;
+  z-index: 400;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   height: 40%;
+}
+
+.Row-mid {
+  width: 100%;
+}
+
+.Text {
+  width: auto;
+  padding-top: 15vh;
+  margin-right: 5%;
+  min-width: 40vw;
+  float: right;
+  color: white;
+  font-size: 30pt;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: start;
+}
+
+.Logo-maior {
+  margin-left: 30%;
+  display: inline-block;
+  background: white;
+  width: auto;
+  padding: 10px;
+  border-radius: 100%;
 }
 
 .Mid-pesquisa {
@@ -80,21 +102,11 @@ html, body {
   color: white;
 }
 
-.Logo-maior {
-  top: 25%;
-  left: 25%;
-  z-index: 400;
-  position: absolute;
-  height: 40%;
-}
-
 .Fundo-logo {
   border-radius: 50px;
   top: 30%;
   left: 27%;
-  z-index: 200;
   background: white;
-  position: absolute;
   height: 30%;
   width: 15%;
 }
@@ -109,6 +121,7 @@ html, body {
 }
 
 #Info-filme {
+  text-align: center;
   margin-top: 2px;
   margin-bottom: 2px;
   color: #626262;
@@ -149,6 +162,7 @@ html, body {
 .Pesquisa-principal {
   height: 40px;
   width: 30vw;
+  min-width: 300px;
   font-size: 12pt;
   padding-left: 15px;
   border-radius: 20px;

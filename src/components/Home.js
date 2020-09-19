@@ -3,6 +3,7 @@ import '../style/Home.css'
 import logo from '../assets/logo.svg'
 import axios from "axios";
 import '../style/Spinner.css'
+import { isMobile } from 'react-device-detect'
 
 class Home extends Component {
 
@@ -66,7 +67,7 @@ class Home extends Component {
             </div>
         }
 
-        if (this.state.pesquisar) {
+        if (this.state.pesquisar || isMobile) {
             pesquisaSuperior = <div>
             </div>
             elementoCentral =
@@ -85,20 +86,21 @@ class Home extends Component {
                 </div>
             </li>
             elementoCentral = <div>
-                <img className="Logo-maior" src={logo} alt="MyMovies.logo" />
-                <div className="Fundo-logo">
-                </div>
-                <div className="Wrapper">
-                    <div className="Mid-container">
+                <div className="Mid-container">
+                    <div className="Row-mid">
+                        <img className="Logo-maior" src={logo} alt="MyMovies.logo" />
                         <div className="Text">
                             Tudo Sobre Filmes.
                             <br />
                             Em um só Lugar.
                             <br />
+                            <a className="Button" onClick={event => this.setState({pesquisar:true})}>Começar</a>
                         </div>
-                        {/*href="http://wwatana.be/mobile/projetos-2019/02/index.html"*/}
-                        <a className="Button" onClick={event => this.setState({pesquisar:true})}>Começar</a>
                     </div>
+                </div>
+                <div className="Fundo-logo">
+                </div>
+                <div className="Wrapper">
                 </div>
             </div>
         }
@@ -109,10 +111,7 @@ class Home extends Component {
                     <ul id="Ul">
                         {/*<li id="small-logo"></li>*/}
                         <li id="Li"> FILMES </li>
-                        <li id="Li"> DIRETORES </li>
-                        <li id="Li"> ATORES </li>
                         <li id="Li"> SÉRIES </li>
-                        <li id="Li"> CURIOSIDADES</li>
                         <li id="Li" onClick={event => this.sair()}> SAIR</li>
                         {pesquisaSuperior}
                         <li id="icon1">

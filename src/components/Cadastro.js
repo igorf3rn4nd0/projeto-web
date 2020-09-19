@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MyInput from './MyInput';
 import '../style/Cadastro.css';
 import axios from 'axios';
+import { isMobile } from 'react-device-detect'
 
 class Cadastro extends Component {
     constructor(props) {
@@ -50,9 +51,15 @@ class Cadastro extends Component {
     }
 
     render () {
+        let classNameCardCadastro
+        if (isMobile) {
+            classNameCardCadastro = 'Cadastro-card-mobile'
+        } else {
+            classNameCardCadastro = 'Cadastro-card'
+        }
         return (
             /*onChange={event => onChange(changeValue('Nome', event.target.value))}*/
-            <div className="Cadastro-card">
+            <div className={classNameCardCadastro}>
                 <span className="Title">Cadastrar-se</span>
                 <MyInput label={'Nome'} onChange={(event) => { this.setState({nome:event.target.value}) }} value={this.state.nome}/>
                 <MyInput label={'E-mail'} onChange={(event) => { this.setState({email:event.target.value}) }} value={this.state.email}/>
