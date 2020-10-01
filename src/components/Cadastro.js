@@ -3,6 +3,7 @@ import MyInput from './MyInput';
 import '../style/Cadastro.css';
 import axios from 'axios';
 import { isMobile } from 'react-device-detect'
+import NotifyError from './NotifyError'
 
 class Cadastro extends Component {
     constructor(props) {
@@ -32,13 +33,13 @@ class Cadastro extends Component {
                     .then((response) => {
                         this.props.onCadastrar(response.data);
                     }).catch(() => {
-                    alert('Usuário ou senha incorretos!')
+                    this.refs.NotifyError.abrir('Usuário ou senha incorretos!')
                 })
             } else {
-                alert('As senhas informadas não batem!')
+                this.refs.NotifyError.abrir('As senhas informadas não batem!')
             }
         } else {
-            alert('Por favor preencha todas as informações! Cada campo deve contar 3 ou mais caracteres')
+            this.refs.NotifyError.abrir('Por favor preencha todas as informações! Cada campo deve contar 3 ou mais caracteres')
         }
         /*
         {
@@ -60,6 +61,7 @@ class Cadastro extends Component {
         return (
             /*onChange={event => onChange(changeValue('Nome', event.target.value))}*/
             <div className={classNameCardCadastro}>
+                <NotifyError ref="NotifyError"/>
                 <span className="Title">Cadastrar-se</span>
                 <MyInput label={'Nome'} onChange={(event) => { this.setState({nome:event.target.value}) }} value={this.state.nome}/>
                 <MyInput label={'E-mail'} onChange={(event) => { this.setState({email:event.target.value}) }} value={this.state.email}/>

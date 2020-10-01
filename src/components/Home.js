@@ -4,6 +4,7 @@ import logo from '../assets/logo.svg'
 import axios from "axios";
 import '../style/Spinner.css'
 import { isMobile } from 'react-device-detect'
+import NotifyError from './NotifyError'
 
 class Home extends Component {
 
@@ -36,7 +37,7 @@ class Home extends Component {
                 .then((response) => {
                     this.setState({filme:response.data})
                 }).catch((error) => {
-                alert(error.message)
+                this.refs.NotifyError.abrir(error.message)
             }).finally(() => {
                 this.setState({loading:false})
             })
@@ -107,6 +108,7 @@ class Home extends Component {
 
         return (
             <div>
+                <NotifyError ref="NotifyError"/>
                 <div className="Menu">
                     <ul id="Ul">
                         {/*<li id="small-logo"></li>*/}

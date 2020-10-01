@@ -3,6 +3,7 @@ import MyInput from './MyInput'
 import axios from 'axios'
 import '../style/Login.css'
 import { isMobile } from 'react-device-detect'
+import NotifyError from './NotifyError'
 
 class Login extends Component {
     constructor(props) {
@@ -23,13 +24,13 @@ class Login extends Component {
                     .then((response) => {
                         this.props.onEntrar(response.data);
                     }).catch(() => {
-                    alert('Usuário ou senha incorretos!')
+                    this.refs.NotifyError.abrir('Usuário ou senha incorretos!')
                 })
             } else {
-                alert('Cada campo deve contar 3 ou mais caracteres!')
+                this.refs.NotifyError.abrir('Cada campo deve contar 3 ou mais caracteres!')
             }
         } else {
-            alert('Por favor informe usuário e senha')
+            this.refs.NotifyError.abrir('Por favor informe usuário e senha')
         }
     }
 
@@ -48,6 +49,7 @@ class Login extends Component {
         }
         return (
             <div className={classNameCardLogin}>
+                <NotifyError ref="NotifyError"/>
                 <span className="Title">Entrar</span>
                 <MyInput onChange={(event) => { this.setState({email:event.target.value}) }} label={'E-mail'} value={this.state.email}/>
                 <MyInput onKeyDown={(event) => this.keyPress(event)} onChange={(event) => { this.setState({senha:event.target.value}) }} label={'Senha'} value={this.state.senha}/>
