@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd8333e6-8419-40f4-9e2e-d60bf6b98e05" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Cadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cadastro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+  </component>
+  <component name="ProjectId" id="1hZQPExK5YQYgX1rrxOu9A7HZrw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src/style" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/src/style" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd8333e6-8419-40f4-9e2e-d60bf6b98e05" name="Default Changelist" comment="" />
+      <created>1600216109209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600216109209</updated>
+      <workItem from="1600216123588" duration="8292000" />
+      <workItem from="1600296368514" duration="162000" />
+      <workItem from="1600298268039" duration="16887000" />
+      <workItem from="1600383780957" duration="21412000" />
+      <workItem from="1600435277356" duration="93000" />
+      <workItem from="1600442880809" duration="1292000" />
+      <workItem from="1600478053984" duration="5049000" />
+      <workItem from="1600531618905" duration="2263000" />
+      <workItem from="1601506540856" duration="5916000" />
+      <workItem from="1604173420889" duration="9403000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1600384627607">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="463" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1600384627607" />
+    <state width="1318" height="174" key="GridCell.Tab.0.bottom" timestamp="1604177359206">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state width="1318" height="174" key="GridCell.Tab.0.bottom/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604177359206" />
+    <state width="1318" height="174" key="GridCell.Tab.0.center" timestamp="1604177359206">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state width="1318" height="174" key="GridCell.Tab.0.center/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604177359206" />
+    <state width="1318" height="174" key="GridCell.Tab.0.left" timestamp="1604177359206">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state width="1318" height="174" key="GridCell.Tab.0.left/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604177359206" />
+    <state width="1318" height="174" key="GridCell.Tab.0.right" timestamp="1604177359206">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state width="1318" height="174" key="GridCell.Tab.0.right/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604177359206" />
+    <state x="388" y="141" width="883" height="512" key="find.popup" timestamp="1601513731602">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="388" y="141" width="883" height="512" key="find.popup/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1601513731602" />
+    <state x="91" y="124" width="1168" height="553" key="new project wizard" timestamp="1604173524234">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="91" y="124" width="1168" height="553" key="new project wizard/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604173524234" />
+    <state x="344" y="174" key="run.anything.popup" timestamp="1604182007751">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="344" y="174" key="run.anything.popup/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604182007751" />
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1600403551305">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="343" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1600403551305" />
+    <state x="405" y="312" width="540" height="178" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1600216299128">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="405" y="312" width="540" height="178" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1600216299128" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/server.js</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
