@@ -22,6 +22,7 @@ class Cadastro extends Component {
     cadastrar () {
         let erros = []
         let campos = ['nome', 'email', 'senha', 'confirmacaoSenha']
+        // todo validação email
         campos.forEach((campo) => {
             if ((!this.state[campo]) || this.state[campo].length < 3) {
                 erros.push(campo)
@@ -29,11 +30,10 @@ class Cadastro extends Component {
         })
         if (erros.length === 0) {
             if (this.state.senha === this.state.confirmacaoSenha) {
-                axios.post('/api/cadastrar-usuario', { email: this.state.email, password: this.state.senha })
-                    .then((response) => {
-                        this.props.onCadastrar(response.data);
-                    }).catch(() => {
-                    this.refs.NotifyError.abrir('Usuário ou senha incorretos!')
+                axios.post('/api/cadastrar-usuario', { nome: this.state.nome, email: this.state.email, senha: this.state.senha }).then((response) => {
+                    this.props.onCadastrar(response);
+                }).catch((error) => {
+                    this.refs.NotifyError.abrir(error && error.response ? error.response.data : 'Erro ao salvar os dados!')
                 })
             } else {
                 this.refs.NotifyError.abrir('As senhas informadas não batem!')

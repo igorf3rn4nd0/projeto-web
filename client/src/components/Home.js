@@ -15,11 +15,7 @@ class Home extends Component {
             pesquisar: false,
             loading: false,
             textoPesquisa: '',
-            filme: {
-                /*Title: 'Batman',
-                imdbRating: 9.9,
-                Poster: 'https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg'*/
-            }
+            filme: {}
         }
         this.pesquisar = this.pesquisar.bind(this)
     }
@@ -32,15 +28,15 @@ class Home extends Component {
         this.setState({textoPesquisa:val})
         if (val && val.length > 3) {
             this.setState({loading:true})
-            const campoPesquisa = val.replace(' ', '+')
-            axios.post('https://www.omdbapi.com/?t=' + campoPesquisa + '&apikey=efbb6c79')
+            const tags = val.split(' ')
+            axios.post('/api/buscar-filme', { tags: tags.map((t) => { return t.toLowerCase() }) })
                 .then((response) => {
                     this.setState({filme:response.data})
                 }).catch((error) => {
-                this.refs.NotifyError.abrir(error.message)
-            }).finally(() => {
-                this.setState({loading:false})
-            })
+                    this.refs.NotifyError.abrir(error && error.response ? error.response.data : 'Erro ao buscar informações do filme!')
+                }).finally(() => {
+                    this.setState({loading:false})
+                })
         } else {
             this.setState({filme: {}})
         }

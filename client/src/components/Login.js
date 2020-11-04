@@ -18,15 +18,12 @@ class Login extends Component {
     entrar () {
         if (this.state.email && this.state.senha) {
             if (this.state.email.length >= 3 && this.state.senha.length >= 3) {
-                // 'eve.holt@reqres.in'
-                // 'cityslicka'
-                axios.post('/api/login', { email: this.state.email, password: this.state.senha })
+                axios.post('/api/login', { email: this.state.email, senha: this.state.senha })
                     .then((response) => {
-                        console.log('response: ', response)
-                        // this.props.onEntrar(response.data);
-                    }).catch(() => {
-                    this.refs.NotifyError.abrir('Usuário ou senha incorretos!')
-                })
+                        this.props.onEntrar(response.data);
+                    }).catch((error) => {
+                        this.refs.NotifyError.abrir(error && error.response ? error.response.data : 'Erro realizar login!')
+                    })
             } else {
                 this.refs.NotifyError.abrir('Cada campo deve contar 3 ou mais caracteres!')
             }

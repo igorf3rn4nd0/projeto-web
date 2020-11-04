@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd8333e6-8419-40f4-9e2e-d60bf6b98e05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Cadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Cadastro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1hZQPExK5YQYgX1rrxOu9A7HZrw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -49,27 +50,28 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/style" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/style" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/src/style" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/style" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend" />
-      <recent name="$PROJECT_DIR$/src/style" />
-      <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -92,6 +94,10 @@
       <workItem from="1600531618905" duration="2263000" />
       <workItem from="1601506540856" duration="5916000" />
       <workItem from="1604173420889" duration="9403000" />
+      <workItem from="1604324799578" duration="16101000" />
+      <workItem from="1604437901820" duration="406000" />
+      <workItem from="1604442300876" duration="4152000" />
+      <workItem from="1604455971606" duration="1389000" />
     </task>
     <servers />
   </component>
@@ -131,10 +137,14 @@
       <screen x="0" y="27" width="1360" height="741" />
     </state>
     <state width="1318" height="174" key="GridCell.Tab.0.right/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604177359206" />
-    <state x="388" y="141" width="883" height="512" key="find.popup" timestamp="1601513731602">
+    <state x="346" y="27" width="658" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604456618753">
       <screen x="0" y="27" width="1360" height="741" />
     </state>
-    <state x="388" y="141" width="883" height="512" key="find.popup/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1601513731602" />
+    <state x="346" y="27" width="658" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604456618753" />
+    <state x="388" y="141" width="883" height="512" key="find.popup" timestamp="1604454592595">
+      <screen x="0" y="27" width="1360" height="741" />
+    </state>
+    <state x="388" y="141" width="883" height="512" key="find.popup/0.27.1360.741/1360.0.1366.768@0.27.1360.741" timestamp="1604454592595" />
     <state x="91" y="124" width="1168" height="553" key="new project wizard" timestamp="1604173524234">
       <screen x="0" y="27" width="1360" height="741" />
     </state>
@@ -157,7 +167,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/server.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

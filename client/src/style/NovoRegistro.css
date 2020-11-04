@@ -1,0 +1,80 @@
+.Modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  color: black;
+  width: 30%;
+  height: 70%;
+}
+
+.Card-mobile {
+  background-color: white;
+  border-radius: 15px;
+  position: relative;
+  padding: 20px;
+  color: black;
+  width: 80%;
+  height: 70%;
+}
+
+.Center {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.Titulo {
+  color: black;
+  left: 0;
+  top: -15px;
+  font-size: 14pt;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.Fechar {
+  background: rgba(194,194,194,0.67);
+  right: calc(-100% + 25px);
+  top: 5px;
+  z-index: 100;
+  display: flex;
+  position: relative;
+  align-items: center;
+  border-radius: 30px;
+  font-size: 12pt;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Botao-fechar {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  position: absolute;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  width: 80px;
+  min-height: 30px;
+  margin-top: 30px;
+  background: #3D9CED;
+  color: white;
+  font-weight: bold;
+}
